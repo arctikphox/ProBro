@@ -11,13 +11,13 @@ subtotal = number_of_pizzas * cost_per_pizza
 
 #Sales Tax @ 8% of the subtotal 
 tax_rate = 0.08
-sales_tax = subtotal + tax_rate
+sales_tax = subtotal * tax_rate
 
 #Final Total
-total = subtotal + tax_rate
+total = subtotal + sales_tax
 
 
 #Total Due from Customer
 print("The total cost is $",total)
-print("This icludes $", subtotal, "for the pizza and")
+print("This includes $", subtotal, "for the pizza and")
 print("$", sales_tax, "in sales tax.")
